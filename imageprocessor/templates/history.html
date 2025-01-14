@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+</head>
+<body>
+    <h1>History</h1>
+    <ul>
+        {% for item in history %}
+        <li>
+            <img src="{{ item.image.url }}" alt="Image" style="max-width: 100px;">
+            Predictions: {{ item.predictions }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to upload</a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Django SQLite database
+db.sqlite3
+
+# Media files (uploads)
+media/
+
+# Static files (generated)
+static/
+
+# Logs
+*.log
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+#model
+**/ResNet50Custom.pkl
+
+#other files
+testiki/

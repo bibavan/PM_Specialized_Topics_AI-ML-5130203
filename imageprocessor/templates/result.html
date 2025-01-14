@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <img src="{{ image_url }}" alt="Uploaded Image" style="max-width: 400px;">
+    <h2>Top 5 Predictions</h2>
+    <ul>
+       {% for class, prob in classes_and_probs %}
+    <p>{{ class }} - {{ prob }}</p>
+{% endfor %}
+    </ul>
+    <a href="/">Upload another image</a> | <a href="/history/">View history</a>
+</body>
+</html>
